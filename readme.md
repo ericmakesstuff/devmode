@@ -2,8 +2,11 @@
 
 Dev Mode shows your developer's stress level in the manor of the color codes once used by the Department of Homeland Security to show the nation's terror alert level.
 
-![Screenshot](/public/screenshot.png?raw=true "Dev Mode Screenshot")
-![Homeland Security](/public/homeland_security.png?raw=true "Homeland Security Advisory System")
+<div align="center">
+        <img width="45%" src="/../master/public/screenshot.png?raw=true" alt="Dev Mode Screenshot" title="Dev Mode Screenshot"</img>
+        <img height="0" width="8px">
+        <img width="45%" src="/../master/public/homeland_security.png?raw=true" alt="Homeland Security Advisory System" title="Homeland Security Advisory System"></img>
+</div>
 
 ## Why
 
