@@ -1,0 +1,43 @@
+/* Elevated button color */
+.btn-elevated {
+  color: #ffffff;
+  background-color: #DCE64A;
+}
+
+.btn-elevated:hover,
+.btn-elevated:focus,
+.btn-elevated:active,
+.btn-elevated.active,
+.open .dropdown-toggle.btn-elevated {
+  color: #ffffff;
+  background-color: #C2BD71;
+}
+
+.btn-elevated:active,
+.btn-elevated.active,
+.open .dropdown-toggle.btn-elevated {
+  background-image: none;
+}
+
+.btn-elevated.disabled,
+.btn-elevated[disabled],
+fieldset[disabled] .btn-elevated,
+.btn-elevated.disabled:hover,
+.btn-elevated[disabled]:hover,
+fieldset[disabled] .btn-elevated:hover,
+.btn-elevated.disabled:focus,
+.btn-elevated[disabled]:focus,
+fieldset[disabled] .btn-elevated:focus,
+.btn-elevated.disabled:active,
+.btn-elevated[disabled]:active,
+fieldset[disabled] .btn-elevated:active,
+.btn-elevated.disabled.active,
+.btn-elevated[disabled].active,
+fieldset[disabled] .btn-elevated.active {
+  background-color: #DCE64A;
+}
+
+.btn-elevated .badge {
+  color: #DCE64A;
+  background-color: #ffffff;
+}

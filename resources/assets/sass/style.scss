@@ -1,2 +1,53 @@
 @import '../../../vendor/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+@import 'elevated_button';
 
+body {
+  padding-top: 20px;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+
+/* Buttons */
+#status-button-container {
+  margin-top: 30px;
+}
+
+.status-button {
+  width: 100%;
+  margin-top: 3px;
+  border-radius: 6px;
+  border: 4px solid #6E6E6E;
+  padding: 14px 24px;
+  font-size: 24px;
+}
+
+.status-button.disabled {
+  border: 0;
+}
+
+.status-button .small {
+  font-size: 14px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

@@ -5787,4 +5787,84 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/* Elevated button color */
+.btn-elevated {
+  color: #ffffff;
+  background-color: #DCE64A; }
+
+.btn-elevated:hover,
+.btn-elevated:focus,
+.btn-elevated:active,
+.btn-elevated.active,
+.open .dropdown-toggle.btn-elevated {
+  color: #ffffff;
+  background-color: #C2BD71; }
+
+.btn-elevated:active,
+.btn-elevated.active,
+.open .dropdown-toggle.btn-elevated {
+  background-image: none; }
+
+.btn-elevated.disabled,
+.btn-elevated[disabled],
+fieldset[disabled] .btn-elevated,
+.btn-elevated.disabled:hover,
+.btn-elevated[disabled]:hover,
+fieldset[disabled] .btn-elevated:hover,
+.btn-elevated.disabled:focus,
+.btn-elevated[disabled]:focus,
+fieldset[disabled] .btn-elevated:focus,
+.btn-elevated.disabled:active,
+.btn-elevated[disabled]:active,
+fieldset[disabled] .btn-elevated:active,
+.btn-elevated.disabled.active,
+.btn-elevated[disabled].active,
+fieldset[disabled] .btn-elevated.active {
+  background-color: #DCE64A; }
+
+.btn-elevated .badge {
+  color: #DCE64A;
+  background-color: #ffffff; }
+
+body {
+  padding-top: 20px; }
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee; }
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent; }
+
+/* Buttons */
+#status-button-container {
+  margin-top: 30px; }
+
+.status-button {
+  width: 100%;
+  margin-top: 3px;
+  border-radius: 6px;
+  border: 4px solid #6E6E6E;
+  padding: 14px 24px;
+  font-size: 24px; }
+
+.status-button.disabled {
+  border: 0; }
+
+.status-button .small {
+  font-size: 14px; }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0; } }
+
 /*# sourceMappingURL=app.css.map */
