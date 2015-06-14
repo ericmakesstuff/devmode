@@ -1,0 +1,19 @@
+{
+  "name": "Laravel Application",
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4"
+  },
+  "version": "0.0.0",
+  "authors": [
+    "Eric Blount <eblount@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ]
+}
