@@ -12,5 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('status');
+    return view('status', [
+        'level' => \App\StatusLog::orderBy('created_at', SORT_DESC)->firstOrFail()->level
+    ]);
+});
+
+Route::get('/set', function () {
+    return view('set');
+});
+
+Route::get('/set/{level}', function ($level) {
+    return \App\StatusLog::create(compact('level'));
 });
