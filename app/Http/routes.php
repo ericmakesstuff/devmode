@@ -22,5 +22,8 @@ Route::get('/set', function () {
 });
 
 Route::get('/set/{level}', function ($level) {
-    return \App\StatusLog::create(compact('level'));
+    if ($log = \App\StatusLog::create(compact('level'))) {
+        event(new \App\Events\StatusLevelUpdated($log));
+    }
+    return $log;
 });

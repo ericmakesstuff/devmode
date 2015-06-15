@@ -32,4 +32,19 @@
 
 @section('script')
 <script type="application/javascript">setLevel('{{ $level }}');</script>
+<script src="//js.pusher.com/2.2/pusher.min.js"></script>
+<script>
+    // Enable pusher logging - don't include this in production
+    Pusher.log = function(message) {
+        if (window.console && window.console.log) {
+            window.console.log(message);
+        }
+    };
+
+    var pusher = new Pusher('7f1ae275b2a2328ef80f');
+    var channel = pusher.subscribe('status');
+    channel.bind('App\\Events\\StatusLevelUpdated', function(data) {
+        setLevel(data.log.level);
+    });
+</script>
 @endsection
