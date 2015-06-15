@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Developer Status</title>
+    <title>Developer Stress Level</title>
 
     <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
 
@@ -19,7 +19,7 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1>Developer Status</h1>
+            <h1>Developer Stress</h1>
             <div id="status-button-container" class="row">
                 <div class="col-sm-12 col-md-6 col-md-offset-3">
                     <button type="button" class="btn btn-danger btn-lg status-button disabled">
