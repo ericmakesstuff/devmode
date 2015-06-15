@@ -22,8 +22,13 @@ Route::get('/set', function () {
 });
 
 Route::get('/set/{level}', function ($level) {
+    if (!in_array($level, ['severe', 'high', 'elevated', 'guarded', 'low'])) {
+        return false;
+    }
+
     if ($log = \App\StatusLog::create(compact('level'))) {
         event(new \App\Events\StatusLevelUpdated($log));
     }
+
     return $log;
 });
