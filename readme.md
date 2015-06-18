@@ -15,4 +15,4 @@ The purpose of this project is to play with Event Broadcasting in Laravel 5.1. M
 ## Demo
 
 <a href="http://devmode.ericmakesstuff.com/" target="_blank">Demo Dashboard</a><br />
-<a href="http://devmode.ericmakesstuff.com/set">Set Demo Stress Level</a>
+<a href="http://devmode.ericmakesstuff.com/set" target="_blank">Set Demo Stress Level</a>
