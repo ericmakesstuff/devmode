@@ -1,3 +1,5 @@
+var myNotification;
+
 $(document).ready(function() {
     $('.set-status-button').on('click', function(evt){
         evt.preventDefault();
@@ -15,4 +17,17 @@ function setLevel(level) {
             }
         }
     });
+    showNotification(level);
+}
+
+function showNotification(level) {
+    myNotification = new Notify('DevMode', {
+        body: 'Developer Stress Level: ' + level
+    });
+
+    if (Notify.needsPermission) {
+        Notify.requestPermission(function() { myNotification.show() }, function() {});
+    } else {
+        myNotification.show();
+    }
 }
