@@ -11,9 +11,18 @@
 |
 */
 
+use App\Events\StatusLevelUpdated;
+use App\StatusLog;
+
 Route::get('/', function () {
+    $status = StatusLog::orderBy('created_at', SORT_DESC)->first();
+
+    if (!$status) {
+        return redirect('/set');
+    }
+
     return view('status', [
-        'level' => \App\StatusLog::orderBy('created_at', SORT_DESC)->firstOrFail()->level
+        'level' => $status->level
     ]);
 });
 
@@ -26,8 +35,8 @@ Route::get('/set/{level}', function ($level) {
         return false;
     }
 
-    if ($log = \App\StatusLog::create(compact('level'))) {
-        event(new \App\Events\StatusLevelUpdated($log));
+    if ($log = StatusLog::create(compact('level'))) {
+        event(new StatusLevelUpdated($log));
     }
 
     return $log;
